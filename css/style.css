@@ -1,0 +1,28 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  line-height: 140%;
+  font-weight: 400;
+  color: #1F1E1E;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container{
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.header__title {
+  font-family: 'PT Serif', serif;
+
+}
