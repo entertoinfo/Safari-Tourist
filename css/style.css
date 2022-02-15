@@ -17,10 +17,56 @@ a {
   color: inherit;
 }
 
-.container{
-  max-width: 1120px;
+.container {
+  max-width: 1140px;
   margin: 0 auto;
+  padding: 0 10px;
 }
+
+.header {
+  background-image: url(../images/header-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+
+.header__inner {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header__top {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.menu {
+  width: 100%;
+}
+
+.menu__list {}
+
+.menu__item {}
+
+.menu__link {}
+
+.header__title {}
+
+.header__content {}
+
+.header__descr {}
+
+.header__btn {}
+
+.header__arrow {}
+
+.header__arrow-link {}
+
+.header__arrow-img {}
+
 
 .header__title {
   font-family: 'PT Serif', serif;
