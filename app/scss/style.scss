@@ -126,3 +126,35 @@
     padding: 12px 0 19px 19px;
   }
 }
+
+.about{
+  background-image: url(/images/about-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  &__title{
+    @extend %title-font;
+    line-height: 46px;
+    color: #fff;
+    text-align: center;
+    padding-top: 32px;
+  }
+
+  &__grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 74px;
+    column-gap: 56px;
+    padding: 51px 0;
+  }
+
+  &__item-text{
+     @extend  %text-font;
+     color: #fff;
+     padding-top: 15px;
+  }
+}
+
+.sentences{
+  padding: 100px 0;
+}
