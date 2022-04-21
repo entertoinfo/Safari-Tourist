@@ -205,6 +205,13 @@
   &__link-title {
     font-weight: 500;
     line-height: 24px;
+    margin-bottom: 15px;
+  }
+
+  &__link-title--big {
+    font-family: $font-text;
+    font-size: 24px;
+    line-height: 32px;
   }
 
   &__price {
@@ -212,15 +219,13 @@
     font-weight: 700;
     font-size: 16px;
     line-height: 21px;
+    margin-top: auto;
   }
 
-  &__country {
-   @extend %text-font;
-   color: #fff;
-  }
-
+  &__country,
   &__time {
     @extend %text-font;
     color: #fff;
+    margin-bottom: 15px;
   }
 }
