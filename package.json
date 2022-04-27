@@ -20,6 +20,7 @@
     "gulp-watch": "^5.0.1",
     "jquery": "^3.6.0",
     "sass": "^1.49.11",
+    "swiper": "^8.1.4",
     "trim-newlines": "^3.0.1"
   }
 }

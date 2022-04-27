@@ -343,4 +343,56 @@
   &__text-item span {
     font-weight: 700;
   }
+
+  &__text-paragraph{
+    padding-bottom: 40px;
+  }
+
+  &__descr{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__descr-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: $font-title;
+    font-size: 58px;
+    font-weight: 700;
+    line-height: 75px;
+    color: #886239;
+  }
+
+  &__descr-text span{
+    font-family: $font-text;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26px;
+    color: #1F1E1E;
+    text-align: center;
+  }
+}
+
+.booking{
+  background-color: #EAEAEA;
+
+  &__title{
+   @extend %title-font;
+   font-weight: 700;
+   text-align: center;
+   padding: 75px 0 43px;
+  }
+
+  &__input{
+    min-width: 256px;
+    min-height: 44px;
+    border: 1px solid #D9D9DE;
+    @extend %text-font;
+    color: #C4C4C4;
+  }
+  &__input:nth-child(1)
+  &__input:nth-child(2){
+    margin-right: 32px;
+  }
 }
