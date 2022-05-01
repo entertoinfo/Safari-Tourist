@@ -9,10 +9,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&family=Roboto:wght@400;500;700&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="css/magnific-popup.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
-
 <body>
 
   <header class="header">
@@ -203,7 +201,10 @@
         <div class="container">
           <div class="map__inner">
             <h2 class="map__title">Карта Африки</h2>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d22917306.000028003!2d25.837747299260776!3d-13.404571894991207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sru!2sua!4v1651073497464!5m2!1sru!2sua" width="1120" height="610" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe class="google__map"
+              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d22917306.000028003!2d25.837747299260776!3d-13.404571894991207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sru!2sua!4v1651073497464!5m2!1sru!2sua"
+              width="1120" height="610" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
             <div class="map__item">
               <div class="map__dscr">
                 <h2 class="map__dscr-title">О сафари турах</h2>
@@ -302,17 +303,38 @@
               <input class="booking__checkbox" type="checkbox">
               Согласие на обработку персональных данных
             </label>
-
           </form>
-          
         </div>
       </section>
     </main>
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__logo">
+          <img class="footer__logo-img" src="images/logo.svg" alt="logo">
+        </div>
+        <div class="footer__item">
+          <div class="footer__text-container">
+            <p class="footer__title-menu">Турагентство «Сафари Туристик»</p>
+            <p class="footer__text">© 2021. Все права защищены</p>
+            <a class="footer__privacy-policy" href="">
+              <p>Политика конфиденциальности</p>
+            </a>
+          </div>
+          <div class="footer__text-container">
+            <p class="footer__title-menu">Адрес:</p>
+            <p class="footer__text">г. Киев, ул.Мира, 20, <br>
+              отель «Динамо», 1 этаж</p>
+          </div>
+          <div class="footer__text-container">
+            <p class="footer__title-menu">Заказ туров и бронирование:</p>
+            <p class="footer__text">тел. 8-050-8-543-543</p>
+            <p class="footer__text">e-mail: safari_turistic@gmail.com</p>
+          </div>
+        </div>
+      </div>
+    </footer>
   </div>
 
-
-  <script src="js/jquery.magnific-popup.min.js"></script>
   <script src="js/main.min.js"></script>
 </body>
 
