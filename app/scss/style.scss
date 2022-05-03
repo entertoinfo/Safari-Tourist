@@ -407,11 +407,17 @@
   &__input::placeholder {
     @extend %text-font;
     color: #C4C4C4;
+
   }
 
   &__input:nth-child(1),
   &__input:nth-child(2) {
     margin-right: 32px;
+  }
+
+  input,
+  textarea {
+    outline: none;
   }
 
   &__area {
@@ -457,35 +463,52 @@
 
 .footer {
   background: #1F1E1E;
-  padding-bottom: 80px;
+  padding: 80px 0;
 
   &__logo-img {
     margin: 0 auto;
-    margin-top: 77px;
     margin-bottom: 70px;
   }
 
-  &__item {
+  &__box {
     display: flex;
     justify-content: space-evenly;
   }
 
-  &__title-menu {
+  &__box-title {
     @extend %footer-text;
-    margin-bottom: 7px
+    font-weight: 500;
+    margin-bottom: 7px;
   }
 
-  &__text {
+  &__copy {
     @extend %footer-text;
-    font-weight: 400;
+    opacity: 0.8;
   }
 
-  &__privacy-policy {
+  &__adress-text {
     @extend %footer-text;
-    font-weight: 400;
+    opacity: 0.8;
+  }
+
+  &__link {
+    @extend %footer-text;
     text-decoration: underline;
   }
+
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__contacts a {
+    @extend %footer-text;
+    opacity: 0.8;
+  }
+
 }
+
+@import 'media';
 
 /* style scrollbar */
 ::-webkit-scrollbar {
@@ -497,8 +520,3 @@
   background-color: #777777;
   border-radius: 10px;
 }
-
-
-
-
-@import 'media';
