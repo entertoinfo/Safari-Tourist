@@ -23,8 +23,7 @@
   }
 
   .google__map {
-    height: 400px;
-    width: 700px;
+    width: 100%;
   }
 
   .map__item {
@@ -43,6 +42,21 @@
   }
 }
 
+@media (max-width: 870px){
+  .sentences__items{
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  .sentences__link:nth-child(3){
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+  .sentences__link:nth-child(6){
+    display: none;
+  }
+}
+
 
 @media (max-width: 800px) {
   .header__contact-text {
@@ -52,11 +66,32 @@
   .header__title {
     font-size: 50px;
   }
+
+  .locations__inner {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .sentences__items{
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+  .sentences__link:nth-child(3){
+    display: none;
+  }
 }
+
+@media (max-width: 650px) {
+  .about__grid{
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+}
+
 
 @media (max-width: 560px) {
   .header__title {
     font-size: 45px;
+    line-height: 45px;
   }
 
   .header__top {
@@ -106,7 +141,30 @@
   }
 
   .menu__list {
-    transform: translateY(-1000%)
+    transform: translateY(-200%);
+    display: block;
+    padding: 10px 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+
+  .menu__list.menu__list--active {
+    transform: translateY(0%);
+    transition: all .5s;
+  }
+
+  .menu__list-item {
+    background-color: #886239;
+    border-radius: 40px;
+    margin-bottom: 5px;
+  }
+
+  .menu__list-link {
+    padding: 10px;
+    display: block;
+    text-align: center;
+
   }
 
   .logo {
@@ -118,5 +176,53 @@
 
   .menu {
     border: none;
+  }
+
+  .locations {
+    padding: 20px 0;
+  }
+
+  .locations__inner {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 20px;
+    column-gap: 20px;
+  }
+
+  .about__grid{
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 40px;
+    column-gap: 30px;
+  }
+}
+
+@media (max-width: 460px) {
+  .header__title {
+    font-size: 35px;
+    padding-top: 40px;
+    line-height: 0;
+  }
+
+  .header__content-text {
+    font-size: 15px;
+    line-height: 17px;
+  }
+
+  .about__grid{
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 30px;
+    column-gap: 20px;
+  }
+  .sentences__items{
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+  }
+  .sentences__items a{
+    background-position: center;
+  }
+}
+
+@media (max-width: 365px) {
+  .header__title {
+    font-size: 30px;
   }
 }
